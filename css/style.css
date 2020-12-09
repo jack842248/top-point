@@ -439,26 +439,33 @@ img {
 
     .section-btn1 {
         color: white;
-        border: solid 1px white;
+        border: none;
         background-color: #654B34;
         transition: 0.5s;
     }
 
     .section-btn1:hover {
         background-color: #654B34;
-        border: solid 1px #654B34;
+    }
+    .section-btn2{
+        background-color: #654B34;
+        color: white;
     }
 
     .section-btn3 {
         color: white;
-        border: solid 1px white;
+        border: none;
         background-color: #654B34;
         transition: 0.5s;
     }
 
     .section-btn3:hover {
         background-color: #654B34;
-        border: solid 1px #654B34;
+    }
+
+    .dessert, 
+    .pasta{
+        filter: brightness(60%);    
     }
 
     .tel {
@@ -474,6 +481,9 @@ img {
     }
     .copyright{
         font-size: 12px;
+    }
+    .footer-nav{
+        font-size: 14px;
     }
 
 }
