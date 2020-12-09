@@ -98,7 +98,7 @@ img {
     display: block;
     width: 240px;
     height: 75px;
-    background-image: url("/images/navbar-logo.svg");
+    background-image: url('../images/navbar-logo.svg');
     background-size: 90%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ img {
     width: 34px;
     height: 31px;
     color: #FFA742;
-    background-image: url(/images/paw-main.svg);
+    background-image: url('../images/paw-main.svg');
     background-size: cover;
     opacity: 0;
     transition: 0.3s;
@@ -140,7 +140,7 @@ img {
     height: 230px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("/images/banner-mark.svg");
+    background-image: url('../images/banner-mark.svg');
     transition: 2s;
     animation: fadeup 5s;
     z-index: 1;
@@ -181,7 +181,7 @@ img {
     width: 40px;
     height: 40px;
     background-size: 100%;
-    background-image: url(/images/cat-sub.svg);
+    background-image: url('../images/cat-sub.svg');
 }
 
 .cat-ul {
@@ -202,7 +202,7 @@ img {
     left: 0;
     right: 0;
     filter: opacity(0);
-    background-image: url(/images/radius-overlay.png);
+    background-image: url('../images/radius-overlay.png');
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 2px;
