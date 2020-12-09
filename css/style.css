@@ -329,19 +329,19 @@ img {
 }
 
 .tel {
-    font-family: Calibri;
+    font-family: Noto Sans TC;
     font-style: italic;
     color: white;
-    font-size: 55px;
+    font-size: 45px;
 }
 
-address {
+.address {
     font-style: italic;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .copyright {
-    font-family: Calibri;
+    font-family: Noto Sans TC;
     font-size: 16px;
 }
 
@@ -460,5 +460,21 @@ address {
         background-color: #654B34;
         border: solid 1px #654B34;
     }
+
+    .tel {
+        font-family: Noto Sans TC;
+        font-style: italic;
+        color: white;
+        font-size: 35px;
+    }
+
+    .address {
+        font-style: italic;
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+
 }
 
