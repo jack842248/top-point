@@ -6580,13 +6580,13 @@ a.close.disabled {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  margin-left: 6px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-image: url("/images/head-white.svg");
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -6602,6 +6602,7 @@ a.close.disabled {
 
 .carousel-indicators .active {
   opacity: 1;
+  background-image: url("/images/head-hover.svg");
 }
 
 .carousel-caption {

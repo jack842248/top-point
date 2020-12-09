@@ -97,8 +97,11 @@ img {
 .logo {
     display: block;
     width: 240px;
-    height: 80px;
-    background-image: url("https://i.imgur.com/GH4oCbk.png");
+    height: 75px;
+    background-image: url("/images/navbar-logo.svg");
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
@@ -111,10 +114,10 @@ img {
     top: 15px;
     right: 15px;
     transform: rotate(-30deg);
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 31px;
     color: #FFA742;
-    background-image: url(https://i.imgur.com/xrR4A6A.png);
+    background-image: url(/images/paw-main.svg);
     background-size: cover;
     opacity: 0;
     transition: 0.3s;
@@ -137,7 +140,7 @@ img {
     height: 230px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("https://i.imgur.com/nDjuknT.png");
+    background-image: url("/images/banner-mark.svg");
     transition: 2s;
     animation: fadeup 5s;
     z-index: 1;
@@ -178,7 +181,7 @@ img {
     width: 40px;
     height: 40px;
     background-size: 100%;
-    background-image: url(https://i.imgur.com/zpP1TdF.png);
+    background-image: url(/images/cat-sub.svg);
 }
 
 .cat-ul {
@@ -199,7 +202,7 @@ img {
     left: 0;
     right: 0;
     filter: opacity(0);
-    background-image: url(https://i.imgur.com/tS010Ia.png);
+    background-image: url(/images/radius-overlay.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 2px;
