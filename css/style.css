@@ -1,4 +1,9 @@
-@import url('載入字體');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Noto+Sans+TC:wght@300&display=swap');
+
+* {
+    font-family: "Kalam", "Noto Sans TC";
+    position: relative;
+}
 
 *,
 *::before,
@@ -6,16 +11,11 @@
     box-sizing: border-box;
 }
 
-
-* {
-    font-family: 'Roboto',sans-serif;
-}
-
-
-* img {
+img {
     max-width: 100%;
     height: auto;
 }
+
 .text-main {
     color: #654B34;
 }
@@ -72,22 +72,7 @@
     list-style: none;
 }
 
-* {
-    font-family: "Kalam", "Noto Sans TC";
-    position: relative;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/****************************** navbar *****************************/
 .navbar-position {
     position: absolute;
     z-index: 3;
@@ -99,7 +84,7 @@ img {
     width: 240px;
     height: 75px;
     background-image: url('../images/navbar-logo.svg');
-    background-size: 90%;
+    background-size: 60%;
     background-position: center center;
     background-repeat: no-repeat;
     text-indent: 101%;
@@ -131,6 +116,7 @@ img {
     opacity: 1;
 }
 
+/****************************** banner *****************************/
 .banner-mark {
     position: absolute;
     top: 55%;
@@ -172,6 +158,7 @@ img {
     filter: opacity(0);
 }
 
+/****************************** section1 *****************************/
 .cat-icon::before {
     content: "";
     display: inline-block;
@@ -254,12 +241,19 @@ img {
         transform: translate(-50%, -50%) rotate(-30deg);
     }
 }
+/****************************** section2 *****************************/
+.padding{
+    padding-right: 0px
+}
+    
 
 .bg-blur {
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    padding: 0;
 }
 
+/****************************** section3 *****************************/
 .section-btn1 {
     color: #654B34;
     border: solid 1px #654B34;
@@ -329,6 +323,7 @@ img {
     }
 }
 
+/****************************** footer *****************************/
 .footer-logo {
     display: block;
 }
@@ -350,6 +345,7 @@ address {
     font-size: 16px;
 }
 
+/****************************** cat-pic *****************************/
 .cat1 {
     position: absolute;
     width: 500px;
@@ -366,6 +362,7 @@ address {
     z-index: 10;
 }
 
+/****************************** lg*****************************/
 @media (max-width: 1200px) {
     .cat1 {
         width: 400px;
@@ -378,6 +375,7 @@ address {
     }
 }
 
+/****************************** md *****************************/
 @media (max-width: 992px) {
     .banner-mark {
         width: 400px;
@@ -404,6 +402,7 @@ address {
     }
 }
 
+/****************************** sm *****************************/
 @media (max-width: 768px) {
 
     .cat1,
@@ -441,7 +440,7 @@ address {
     .section-btn1 {
         color: white;
         border: solid 1px white;
-        background-color: transparent;
+        background-color: #654B34;
         transition: 0.5s;
     }
 
@@ -453,7 +452,7 @@ address {
     .section-btn3 {
         color: white;
         border: solid 1px white;
-        background-color: transparent;
+        background-color: #654B34;
         transition: 0.5s;
     }
 
