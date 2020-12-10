@@ -75,7 +75,7 @@ img {
 /****************************** navbar *****************************/
 .navbar-position {
     position: absolute;
-    z-index: 3;
+    z-index: 10;
     background-color: rgba(101, 75, 52, 0.9);
 }
 
@@ -91,6 +91,53 @@ img {
     overflow: hidden;
     white-space: nowrap;
 }
+
+
+.navbar-icon {
+    display: none;
+    position: relative;
+    border: solid 1px white;
+    width: 56px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line1,
+.line2,
+.line3 {
+    position: relative;
+    border-radius: 4px;
+    width: 28px;
+    height: 3px;
+    transform: translateX(14px) translateY(10px);
+    transition: 0.5s;
+    background-color: white;
+}
+.line2 {
+    transition: 0s;
+    transform: translateX(14px) translateY(15px);
+}
+.line3 {
+    transform: translateX(14px) translateY(20px);
+}
+
+
+.navbar-icon-click
+{
+    transition: 0.5s;
+}
+.line1-click {
+    transform: translateX(10px) translateY(18px) rotate(45deg);
+    width: 36px;
+}
+.line2-click {
+    display: none;
+}
+.line3-click {
+    transform: translateX(10px) translateY(16px) rotate(-45deg);
+    width: 36px;
+}
+
 
 .nav-btn:after {
     content: "";
@@ -159,6 +206,82 @@ img {
 }
 
 /****************************** section1 *****************************/
+.pawbox{
+    position: absolute;
+    display: inline-block;
+    top: 330px;
+    left: 0px;
+    transform: rotate(-120deg);
+}
+
+.pawbox1 {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    bottom: 250px;
+    transform: rotate(60deg);
+}
+.paw1,
+.paw2,
+.paw3,
+.paw4,
+.paw5,
+.paw6,
+.paw7,
+.paw8 {
+    opacity: 0.3
+    position: absolute;
+    width: 20px;
+    animation: pace 10s infinite;
+}
+.paw1{
+    transform: translate(10px, 400px);
+}
+.paw2 {
+    transform: translate(30px, 350px);
+    animation-delay: 0.4s
+}
+.paw3 {
+    transform: translate(10px, 300px);
+    animation-delay: 0.8s
+}
+.paw4 {
+    transform: translate(30px, 270px);
+    animation-delay: 1.2s
+}
+.paw5 {
+    transform: translate(10px, 220px);
+    animation-delay: 1.6s
+}
+.paw6 {
+    transform: translate(30px, 160px);
+    animation-delay: 2.0s
+}
+.paw7 {
+    transform: translate(10px, 110px);
+    animation-delay: 2.4s
+}
+.paw8 {
+    transform: translate(30px, 70px);
+    animation-delay: 2.8s
+}
+
+@keyframes pace{
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+
+
 .cat-icon::before {
     content: "";
     display: inline-block;
@@ -242,11 +365,6 @@ img {
     }
 }
 /****************************** section2 *****************************/
-.padding{
-    padding-right: 0px
-}
-    
-
 .bg-blur {
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -254,14 +372,16 @@ img {
 }
 
 /****************************** section3 *****************************/
-.section-btn1 {
+.section-btn1,
+.section-btn3 {
     color: #654B34;
     border: solid 1px #654B34;
     padding: 15px 45px;
     transition: 0.5s;
 }
 
-.section-btn1:hover {
+.section-btn1:hover,
+.section-btn3:hover {
     background-color: #654B34;
     color: white;
 }
@@ -276,18 +396,6 @@ img {
 }
 
 .section-btn2:hover {
-    background-color: #654B34;
-    color: white;
-}
-
-.section-btn3 {
-    color: #654B34;
-    border: solid 1px #654B34;
-    padding: 15px 60px;
-    transition: 0.5s;
-}
-
-.section-btn3:hover {
     background-color: #654B34;
     color: white;
 }
@@ -345,6 +453,7 @@ img {
     font-size: 16px;
 }
 
+
 /****************************** cat-pic *****************************/
 .cat1 {
     position: absolute;
@@ -362,6 +471,54 @@ img {
     z-index: 10;
 }
 
+
+/****************************** page-menu *****************************/
+.menu-title {
+    font-weight: 600;
+    color: #44403a;
+    text-align: center
+}
+
+.list-group {
+    width: 90%;
+    margin: 0 auto;
+    border-top: dotted 4px #654B34;
+    border-bottom: dotted 4px #654B34;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    z-index: 4;
+}
+
+.list-btn {
+    margin-left: 20px;
+    margin-bottom: 22px;
+    padding-bottom: 0px;
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+    color: #654B34;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn-bottom {
+    display: block;
+    border-top: solid 1px #654B34;
+    width: 0px;
+    transition: 0.8s;
+}
+
+.list-btn:hover {
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+}
+
+.list-btn:hover>.btn-bottom {
+    width: 200px;
+}
+
+
 /****************************** lg*****************************/
 @media (max-width: 1200px) {
     .cat1 {
@@ -377,6 +534,15 @@ img {
 
 /****************************** md *****************************/
 @media (max-width: 992px) {
+
+    .navbar-icon {
+        display: block
+    }
+
+    .nav-btn:after {
+        right: 40%;
+    }
+
     .banner-mark {
         width: 400px;
         height: 200px;
@@ -400,10 +566,16 @@ img {
         width: 350px;
         left: -130px;
     }
+
+    .btn-bottom {
+        margin: 0 auto;
+    }
+
 }
 
 /****************************** sm *****************************/
 @media (max-width: 768px) {
+
 
     .cat1,
     .cat2 {
@@ -417,6 +589,11 @@ img {
     .cat-ul {
         height: auto;
         padding: 50px 0px;
+    }
+
+    .cat-box:hover>.overlay {
+        filter: opacity(0);
+        transition: 0.7s;
     }
 
     .cat-content {
@@ -437,21 +614,7 @@ img {
         color: white;
     }
 
-    .section-btn1 {
-        color: white;
-        border: none;
-        background-color: #654B34;
-        transition: 0.5s;
-    }
-
-    .section-btn1:hover {
-        background-color: #654B34;
-    }
-    .section-btn2{
-        background-color: #654B34;
-        color: white;
-    }
-
+    .section-btn1,
     .section-btn3 {
         color: white;
         border: none;
@@ -459,8 +622,14 @@ img {
         transition: 0.5s;
     }
 
+    .section-btn1:hover,
     .section-btn3:hover {
         background-color: #654B34;
+    }
+
+    .section-btn2{
+        background-color: #654B34;
+        color: white;
     }
 
     .dessert, 
@@ -479,11 +648,18 @@ img {
         font-style: italic;
         font-size: 14px;
     }
+
     .copyright{
         font-size: 12px;
     }
+
     .footer-nav{
         font-size: 14px;
+    }
+    .list-btn{
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
     }
 
 }
