@@ -62,7 +62,8 @@ img {
 }
 
 .font-md {
-    font-size: 20px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
 }
 
 .bg-cover {
@@ -505,7 +506,7 @@ img {
 
 .list-btn-bottom {
     display: block;
-    border-top: solid 1px #654B34;
+    border-top: dotted 2px #654B34;
     width: 0px;
     transition: 0.8s;
 }
@@ -608,6 +609,50 @@ img {
 }
 
 
+/****************************** page-about*****************************/
+.about-ul{
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+.fa-home,
+.fa-cookie-bite,
+.fa-calendar-day,
+.fa-mug-hot {
+    font-size: 30px;
+    color: #654B34;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.cat-photo-1,
+.cat-photo-2,
+.cat-photo-4,
+.cat-photo-5,
+.cat-photo-7{
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.cat-photo-3,
+.cat-photo-6 {
+    height:600px;
+}
+.cat-photo-3{
+    background-position: bottom center;
+}
+.cat-photo-7 {
+    background-position: bottom right;
+}
+.about-footer{
+    margin-top: 20px;
+    width: 100%;
+    border-top: dotted 5px #C6B089;
+
+}
+
 /****************************** lg*****************************/
 @media (max-width: 1200px) {
     .cat1 {
@@ -618,6 +663,9 @@ img {
     .cat2 {
         width: 400px;
         left: -120px;
+    }
+    .about-ul {
+        margin-top: 15px;
     }
 }
 
@@ -663,7 +711,15 @@ img {
     .list-box {
         padding-left: 0px;
     }
-
+    .about-ul {
+        margin-top: 5px;
+    }
+    .cat-photo-3 {
+        display: block;
+    }
+    .cat-photo-7{
+        background-position: left center;
+    }
 }
 
 /****************************** sm *****************************/
@@ -771,6 +827,32 @@ img {
     .footer-nav{
         font-size: 14px;
     }
-
+    .about-ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list-btn {
+        text-align: center;
+        
+    }
+    .fa-home,
+    .fa-cookie-bite,
+    .fa-calendar-day,
+    .fa-mug-hot{
+        font-size: 50px;
+        color: #654B34;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .cat-photo-6 {
+        display: none;
+    }
 }
 
+@media (max-width: 576px) {
+    .cat-photo-3 {
+        display: none;
+    }
+
+}
