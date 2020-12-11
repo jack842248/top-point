@@ -98,7 +98,6 @@
                 </div>
             </div>
         </nav>
-        <!--///////////////////////////////////////////// 菜單-->
         <div class="carousel slide" id="banner" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li class="active" data-target="#banner" data-slide-to="0"></li>
@@ -132,87 +131,91 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
-        <!--///////////////////////////////////////////// 菜單-->
-    </header>
+    </header>   
+
+    <!--///////////////////////////////////////////// Q&A-->
     <section class="container-fluid py-5 px-4" style="background-color: #ffeabf;">
-        <h2 class="menu-title"><i class="fas fa-utensils"></i> 突奌喵菜單 <i class="fas fa-utensils"></i></h2>
+        <h2 class="qa-title"><i class="far fa-question-circle"></i> 突奌喵問答集 <i class="far fa-question-circle"></i></h2>
         <div class="row pt-5 justify-content-center">
-            <div class="col-md-4 list-box">
-                <div class="list-group sticky-top" style="top:10px">
-                    <a class="list-btn active" href="#pane-1" data-toggle="list"><i class="fas fa-coffee"></i> 單品咖啡 <small>SingleCoffee</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-2" data-toggle="list"><i class="fas fa-coffee"></i> 義式咖啡 <small>EspressoCoffee</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-3" data-toggle="list"><i class="fas fa-glass-whiskey"></i> 鮮奶茶&單品茶 <small>MilkTea&Tea</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-4" data-toggle="list"><i class="fas fa-glass-whiskey"></i> 花果茶 <small>FlowerFruitTea</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-5" data-toggle="list"><i class="fas fa-seedling"></i> 其他&沙拉 <small>SoftDrinks&Salad</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-6" data-toggle="list"><i class="fas fa-cheese"></i> 輕食&鬆餅 <small>Lightmeal&Waffle</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-7" data-toggle="list"><i class="fas fa-pizza-slice"></i> 薄脆披薩 <small>CrispPizza</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-8" data-toggle="list"><i class="fas fa-utensils"></i> 番茄紅醬料理 <small>Tomato</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-9" data-toggle="list"><i class="fas fa-utensils"></i> 奶油白醬料理 <small>Creamy</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-10" data-toggle="list"><i class="fas fa-utensils"></i> 羅勒青醬料理 <small>Creamy&Wine-Based</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                    <a class="list-btn" href="#pane-11" data-toggle="list"><i class="far fa-thumbs-up"></i> 優惠1+1組合 <small>AfternoonTea</small>
-                        <span class="list-btn-bottom"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="tab-content" style="width:100%">
-                    <div class="tab-pane active" id="pane-1" style="width:98%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-1.jpg">
+            <div class="col-lg-8">
+                <div class="accordion" id="accordion">
+                    <div class="card">
+                        <div class="card-header qa-click">
+                            <a class="text-dark qa-a" href="#collapse-1" data-toggle="collapse">Q1：我們可以摸貓咪、拍照跟他們玩嗎?</a>
+                        </div>
+                        <div id="collapse-1" class="card-body qa-content collapse show" data-parent="#accordion">A1：可以!但因為貓咪個性容易緊張，所以請勿驚擾睡夢中的貓咪。<br>可以輕撫貓咪與他們合照，但請勿使用閃光燈拍照、強行抱起他們或餵食。<br>請避免讓小朋友在店內奔跑喧嘩或是單獨與貓咪相處，以免貓咪攻擊小朋友。</div>
                     </div>
-                    <div class="tab-pane" id="pane-2" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-2.jpg">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="text-dark qa-a" href="#collapse-2" data-toggle="collapse">Q2：可以帶自己的毛小孩進來嗎?</a>
+                        </div>
+                        <div id="collapse-2" class="card-body qa-content collapse" data-parent="#accordion">A2：可以喔!以不影響他人為主，而且結紮及施打過預防針的毛孩子會比較好喔!<br>毛孩子到陌生的地方環境都會比較緊張不適應，建議您要帶提籠或牽繩!為維護現場品質，寵物隻數不可超過人數。</div>
                     </div>
-                    <div class="tab-pane" id="pane-3" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-3.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-3" data-toggle="collapse">Q3：請問我們可以帶外食嗎?</a>
+                        </div>
+                        <div id="collapse-3" class="card-body qa-content collapse" data-parent="#accordion">A3：店內禁止飲用外食喔!但可以帶蛋糕來慶生喔!</div>
                     </div>
-                    <div class="tab-pane" id="pane-4" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-4.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-4" data-toggle="collapse">Q4：消費方式?</a>
+                        </div>
+                        <div id="collapse-4" class="card-body qa-content collapse" data-parent="#accordion">A4：輕食、午餐、晚餐、個人套餐、只收現金。</div>
                     </div>
-                    <div class="tab-pane" id="pane-5" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-5.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-5" data-toggle="collapse">Q5：請問你們可以訂位嗎?</a>
+                        </div>
+                        <div id="collapse-5" class="card-body qa-content collapse" data-parent="#accordion">A5：目前只接受電話訂位!</div>
                     </div>
-                    <div class="tab-pane" id="pane-6" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-6.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-6" data-toggle="collapse">Q6：請問你們有限制用餐時間?</a>
+                        </div>
+                        <div id="collapse-6" class="card-body qa-content collapse" data-parent="#accordion">A6：平日沒有限時，但週六及例假日限時兩小時!</div>
                     </div>
-                    <div class="tab-pane" id="pane-7" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-7.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-7" data-toggle="collapse">Q7：座位最多可以容納多少人呢?</a>
+                        </div>
+                        <div id="collapse-7" class="card-body qa-content collapse" data-parent="#accordion">A7：維護現場用餐品質，我們最多接受10位的訂位喔!</div>
                     </div>
-                    <div class="tab-pane" id="pane-8" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-8.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-8" data-toggle="collapse">Q8：星期天有營業嗎?</a>
+                        </div>
+                        <div id="collapse-8" class="card-body qa-content collapse" data-parent="#accordion">A8：沒有喔!我們是星期天固定公休。<br>此外每日的營業時間是11:30-21:30，下午沒有休息唷!店休時間請追蹤FB粉絲專頁公告。</div>
                     </div>
-                    <div class="tab-pane" id="pane-9" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-9.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-9" data-toggle="collapse">Q9：為什麼晚上八點之後不能點餐點了?</a>
+                        </div>
+                        <div id="collapse-9" class="card-body qa-content collapse" data-parent="#accordion">A9：我們營業到21:30的緣故，怕八點之後用餐的客人會有時間上的壓力。<br>因此我們最後點餐的時間為19:50，另外下午茶套餐最後點餐時間為17:00，以現場點餐的時間為主!</div>
                     </div>
-                    <div class="tab-pane" id="pane-10" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-10.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-10" data-toggle="collapse">Q10：有汽車停車場嗎?</a>
+                        </div>
+                        <div id="collapse-10" class="card-body qa-content collapse" data-parent="#accordion">A10：我們沒有停車場!<br>開車的朋友建議您就近至合作金庫斜對面的收費停車場，步行約3分鐘!</div>
                     </div>
-                    <div class="tab-pane" id="pane-11" style="width:95%;overflow:auto">
-                        <img style="min-width:760px" src="images/menu-11.jpg">
+                    <div class="card">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-11" data-toggle="collapse">Q11：請問有提供素食的餐點嗎?</a>
+                        </div>
+                        <div id="collapse-11" class="card-body qa-content collapse" data-parent="#accordion">A11：有的，但只有素食義大利麵(或燉飯)和瑪格莉特披薩，可以不幫您家洋蔥蒜頭。</div>
                     </div>
+                    <div class="card mb-3">
+                        <div class="card-header ">
+                            <a class="text-dark qa-a" href="#collapse-12" data-toggle="collapse">Q12：請問可以玩牌嗎?</a>
+                        </div>
+                        <div id="collapse-12" class="card-body qa-content collapse" data-parent="#accordion">A12：抱歉，塔羅牌占卜是OK的，但咖啡喵是禁止桌上遊戲的!</div>
+                    </div>
+                    <small class="text-center">以上說明和消費規則突奌咖啡保有修改權利，觀迎來電詢問唷!</small>
                 </div>
             </div>
         </div>
-        <div class="menu-footer"></div>
+        <div class="qa-footer"></div>
     </section>
 
 

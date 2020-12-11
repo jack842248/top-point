@@ -9,6 +9,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    /* border: solid 1px red; */
 }
 
 img {
@@ -229,8 +230,7 @@ img {
 .paw6,
 .paw7,
 .paw8 {
-    opacity: 0.3
-    position: absolute;
+    opacity: 0.3;
     width: 20px;
     animation: pace 10s infinite;
 }
@@ -474,19 +474,21 @@ img {
 
 /****************************** page-menu *****************************/
 .menu-title {
+    padding-top: 50px;
+    text-align: center;
     font-weight: 600;
-    color: #44403a;
-    text-align: center
+}
+.menu-title::after{
+    content: "";
+    display: block;
+    position: relative;
+    border-top: dotted 5px #C6B089;
+    width: 100%;
+    top: 10px
 }
 
-.list-group {
-    width: 90%;
-    margin: 0 auto;
-    border-top: dotted 4px #654B34;
-    border-bottom: dotted 4px #654B34;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    z-index: 4;
+.list-box{
+    padding-left: 100px;
 }
 
 .list-btn {
@@ -501,7 +503,7 @@ img {
     transition: 0.5s;
 }
 
-.btn-bottom {
+.list-btn-bottom {
     display: block;
     border-top: solid 1px #654B34;
     width: 0px;
@@ -510,12 +512,99 @@ img {
 
 .list-btn:hover {
     transition: 0.2s;
-    color: white;
+    color: #FFA742;
     text-decoration: none;
 }
 
-.list-btn:hover>.btn-bottom {
+.list-btn:hover>.list-btn-bottom {
     width: 200px;
+}
+.menu-footer{
+    margin-top: 20px;
+    width: 100%;
+    border-top: dotted 5px #C6B089;
+}
+
+/****************************** page-qa *****************************/
+.qa-title {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.qa-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-top: dotted 5px #C6B089;
+    width: 100%;
+    top: 10px
+}
+
+.qa-click{
+    background-color: #f1a44b;
+    font-size: 24px;
+}
+
+.qa-a{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.qa-content{
+    background-color: #f8eddac7;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.qa-footer {
+    margin-top: 20px;
+    width: 100%;
+    border-top: dotted 5px #C6B089;
+}
+
+
+/****************************** page-contact*****************************/
+.contact-title {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.contact-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-top: dotted 5px #C6B089;
+    width: 100%;
+    top: 10px
+}
+
+.contact-p{
+    font-size: 18px;
+    line-height: 2;
+
+
+}
+
+.submit-btn {
+    background-color: #FFA742;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 20px;
+}
+
+.submit-btn:hover {
+    background-color: #f1a44b;
+}
+
+.contact-footer{
+    margin-top: 20px;
+    width: 100%;
+    border-top: dotted 5px #C6B089;
 }
 
 
@@ -567,14 +656,33 @@ img {
         left: -130px;
     }
 
-    .btn-bottom {
+    .list-btn-bottom {
         margin: 0 auto;
+    }
+
+    .list-box {
+        padding-left: 0px;
     }
 
 }
 
 /****************************** sm *****************************/
 @media (max-width: 768px) {
+    .pawbox {
+        position: absolute;
+        display: inline-block;
+        top: 400px;
+        left: -120px;
+        transform: rotate(-120deg);
+    }
+
+    .pawbox1 {
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        bottom: 250px;
+        transform: rotate(60deg);
+    }
 
 
     .cat1,
@@ -583,6 +691,13 @@ img {
     }
 
     .banner-mark {
+        display: none;
+    }
+
+    .paw5,
+    .paw6,
+    .paw7,
+    .paw8 {
         display: none;
     }
 
@@ -655,11 +770,6 @@ img {
 
     .footer-nav{
         font-size: 14px;
-    }
-    .list-btn{
-        font-size: 18px;
-        margin-bottom: 15px;
-        text-align: center;
     }
 
 }
