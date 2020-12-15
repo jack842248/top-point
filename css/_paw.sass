@@ -1,0 +1,67 @@
+.pawbox
+    position: absolute
+    display: inline-block
+    top: 330px
+    left: 50px
+    transform: rotate(-120deg)
+
+.pawbox1 
+    position: absolute
+    display: inline-block
+    right: 50px
+    bottom: 250px
+    transform: rotate(60deg)
+
+.paw1,
+.paw2,
+.paw3,
+.paw4,
+.paw5,
+.paw6,
+.paw7,
+.paw8 
+    opacity: 0.3
+    width: 20px
+    animation: pace 10s infinite
+.paw1
+    transform: translate(10px, 400px)
+.paw2 
+    transform: translate(30px, 350px)
+    animation-delay: 0.4s
+.paw3 
+    transform: translate(10px, 300px)
+    animation-delay: 0.8s
+.paw4 
+    transform: translate(30px, 270px)
+    animation-delay: 1.2s
+.paw5 
+    transform: translate(10px, 220px)
+    animation-delay: 1.6s
+.paw6 
+    transform: translate(30px, 160px)
+    animation-delay: 2.0s
+.paw7
+    transform: translate(10px, 110px)
+    animation-delay: 2.4s
+.paw8 
+    transform: translate(30px, 70px)
+    animation-delay: 2.8s
+@keyframes pace
+    0% 
+        opacity: 0
+    10% 
+        opacity: 0.3
+    100% 
+        opacity: 0
+    
+
+//***************************768px***************************//
+@media (max-width: 768px)
+    .pawbox,
+    .pawbox1
+        display: none
+
+    
+
+
+

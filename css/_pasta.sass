@@ -1,0 +1,113 @@
+.section-btn1,
+.section-btn3 
+    color: $color_main
+    border: solid 1px $color_main
+    padding: 15px 45px
+    transition: 0.5s
+.section-btn1:hover,
+.section-btn3:hover 
+    background-color: $color_main
+    color: $color_white
+
+.map
+    width: 450px
+    height: 420px
+    margin-left: 50px
+    background-image: url(../images/parking.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.map-h2
+    font-size: 40px
+    font-weight: 600
+
+.map-p
+    color: $color_main
+    margin-top: 20px
+    text-align: center
+    line-height: 35px
+    font-size: 20px
+
+
+//***************************992px***************************//
+@media (max-width: 992px)
+    .map
+        width: 350px
+        height: 320px
+        margin-left: 0px
+
+    .map-h2
+        font-size: 35px
+        font-weight: 600
+
+    .map-p
+        font-size: 18px
+
+
+//***************************768px***************************//
+@media (max-width: 768px)
+
+    .section-h3 
+        font-weight: 600
+        text-shadow: 1px 1px 5px #353535
+    
+    .section-h5 
+        color: $color_white
+
+    .section-btn1,
+    .section-btn3 
+        color: $color_white
+        border: none
+        background-color: $color_main
+        transition: 0.5s
+    .section-btn1:hover,
+    .section-btn3:hover 
+        background-color: $color_main
+
+    .map
+        width: 350px
+        height: 320px
+        margin-left: 50px
+
+    .map-h2
+        margin-top: 20px
+        font-size: 35px
+        font-weight: 600
+
+    .map-p
+        font-size: 18px
+
+    .dessert, 
+    .pasta
+        filter: brightness(60%)
+    
+
+//***************************576px***************************//
+@media (max-width: 576px)
+    .map
+        width: 280px
+        height: 250px
+        margin-right: auto
+        margin-left: auto
+
+    .map-h2
+        margin-top: 50px
+        font-size: 24px
+
+    .map-p
+        font-size: 16px
+        line-height: 1.8
+
+    .section-h3 
+        font-size: 24px
+        font-weight: normal
+        text-shadow: 1px 1px 5px #353535
+    
+    .section-h5 
+        font-size: 18px
+        color: $color_white
+
+    
+    
+    

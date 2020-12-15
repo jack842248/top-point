@@ -1,0 +1,124 @@
+.qa-title 
+    padding-top: 50px
+    text-align: center
+    font-weight: 600
+.qa-title::after 
+    content: ""
+    display: block
+    position: relative
+    border-top: dotted 8px $color_sub
+    width: 100%
+    top: 10px
+
+
+.reel
+    padding: 10px
+    border: solid 5px $color_sub
+    border-radius: 10px
+
+
+.circle1
+    position: absolute
+    width: 50px
+    top: -3px
+    left: -3px
+    background-color: $color_sub
+    border-radius: 0px 0px 100px
+    height: 50px
+.circle2 
+    position: absolute
+    width: 50px
+    top: -3px
+    right: -3px
+    background-color: $color_sub
+    border-radius: 100px 0px 0px
+    height: 50px
+    transform: rotate(-90deg)
+.circle3 
+    position: absolute
+    width: 50px
+    bottom: -3px
+    right: -3px
+    background-color: $color_sub
+    border-radius: 100px 0px 0px
+    height: 50px
+.circle4 
+    position: absolute
+    width: 50px
+    bottom: -3px
+    left: -3px
+    background-color: $color_sub
+    border-radius: 100px 0px 0px
+    height: 50px
+    transform: rotate(-270deg)
+
+
+.qa-ul
+    font-size: 20px
+    line-height: 2.8
+
+
+.qa-click
+    background-color: $color_hover
+    font-size: 24px
+
+
+.qa-a
+    font-size: 20px
+    display: block
+    width: 100%
+    padding: 10px 0px
+
+
+.qa-content
+    background-color: #f8eddac7
+    font-size: 18px
+    letter-spacing: 0.5px
+    line-height: 1.8
+
+
+.qa-footer 
+    margin-top: 20px
+    width: 100%
+    border-top: dotted 5px $color_sub
+
+    
+//***************************992px***************************//
+@media (max-width: 992px)
+    .qa-ul 
+        font-size: 18px
+        line-height: 2
+    
+
+    .qa-a 
+        padding: 0px
+
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4
+        height: 20px
+        width: 20px
+
+
+//***************************576px***************************//
+@media (max-width: 576px)
+    .qa-title 
+        font-size: 24px
+    .qa-title::after 
+        border-top: dotted 5px $color_sub
+
+
+    .qa-ul
+        padding-left: 20px
+        font-size: 16px
+
+
+    .qa-a
+        font-size: 18px
+
+
+    .qa-content
+        font-size: 16px
+        line-height: 1.8

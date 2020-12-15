@@ -1,0 +1,25 @@
+.scrolldown
+    position: absolute
+    transform: translateX(-50%)
+    top: 10px
+    font-size: 30px
+    z-index: 500
+    color: $color_sub
+    transition: 1.5s
+    opacity: 1
+    animation: scrolldown 2s infinite
+@keyframes scrolldown
+    0%
+        transform: translateY(-5px)
+    
+    50%
+        transform: translateY(5px)
+    
+    100%
+        transform: translateY(-5px)
+
+.scrolldown-transparent
+    opacity: 0
+    transition: 1.5s
+
+    

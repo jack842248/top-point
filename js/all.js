@@ -14,13 +14,25 @@ $(document).ready(function(){
 
         }
     });
-    //----------------漢堡選單效果----------------//
+
+
+    //----------------navbar離開頂部效果----------------//
     $(window).scroll(function(){
         if($(window).scrollTop()>0)
-            $("#navbar").
+            $("#navbar").parent().addClass("navbar-transparent"),
+            $("#scrolldown").addClass("scrolldown-transparent");
+        else
+            $("#navbar").parent().removeClass("navbar-transparent"),
+            $("#scrolldown").removeClass("scrolldown-transparent");
+    });
 
 
-
+    //----------------uptopc回到頂部----------------//
+    $("#uptop").on('click',function(e){
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop:0,
+        },1000);
     });
 
 

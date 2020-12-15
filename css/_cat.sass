@@ -1,0 +1,158 @@
+.cat-title
+    color: $color_sub
+    text-align: center
+    padding-bottom: 20px
+    border-bottom: dotted 8px
+.cat-title::before 
+    content: ""
+    display: inline-block
+    position: relative
+    top: 2px
+    left: -5px
+    width: 40px
+    height: 40px
+    background-size: 100%
+    background-image: url('../images/cat-sub.svg')
+
+
+.cat-ul 
+    height: 380px
+    padding: 50px 0px
+
+
+.cat-box 
+    list-style: none
+    height: 300px
+
+
+.img-border 
+    border: solid 1px $color_sub
+    border-radius: 100%
+
+
+.overlay 
+    display: inline-block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    filter: opacity(0)
+    background-image: url('../images/radius-overlay.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    padding: 2px
+.cat-box:hover > .overlay 
+    filter: opacity(0.7)
+    transition: 0.7s
+
+
+.fa-bell 
+    display: block
+    position: relative
+    top: 0%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 5
+.cat-box:hover > .fa-bell
+    animation: bells 1s infinite
+@keyframes bells 
+    0% 
+        transform: translate(-50%, -50%) rotate(-30deg)
+
+    50% 
+        transform: translate(-50%, -50%) rotate(30deg)
+    
+    100% 
+        transform: translate(-50%, -50%) rotate(-30deg)
+
+
+.cat-content 
+    top: -200px
+    opacity: 0
+.cat-box:hover > .cat-content 
+    opacity: 1
+    transition: 0.7s
+
+
+.cat-h5
+    color: $color_white
+
+
+.cat-h2
+    color: $color_hover
+
+
+.cat-h4 
+    color: $color_sub        
+    font-size: 20px      
+                               
+
+.cat-footer
+    color: $color_sub 
+    padding-bottom: 20px
+    border-bottom: dotted 8px
+
+
+//***************************992px***************************//
+@media (max-width: 992px)
+    .cat-ul 
+        height: 320px
+        padding: 50px 0px
+
+    
+//***************************768px***************************//
+@media (max-width: 768px)
+    .cat-ul 
+        height: auto
+        padding: 50px 0px
+        
+
+    .cat-content 
+        top: 0
+        opacity: 1
+
+
+//***************************768px***************************//
+@media (max-width: 576px)
+    .cat-title
+        color: $color_sub
+        text-align: center
+        font-size: 26px
+        padding-bottom: 20px
+        border-bottom: dotted 5px
+
+
+    .img-border 
+        width: 70%
+        border: solid 1px $color_sub
+        border-radius: 100%
+
+
+    .overlay 
+        width: 70%
+        margin: 0 auto
+
+
+    .cat-h5
+        font-size: 18px
+        color: $color_white
+
+
+    .cat-h2
+        color: $color_hover
+        font-size: 20px
+
+
+    .cat-h4 
+        color: $color_sub        
+        font-size: 16px     
+
+
+    .cat-footer
+        color: $color_sub 
+        padding-bottom: 20px
+        border-bottom: dotted 5px
+
+      
+    

@@ -1,0 +1,42 @@
+.banner-mark 
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 450px
+    height: 230px
+    background-size: 100%
+    background-repeat: no-repeat
+    background-image: url('../images/banner-mark.svg')
+    transition: 2s
+    animation: fadeup 5s
+    z-index: 1
+    filter: opacity(0.8)
+@keyframes fadeup 
+    0% 
+        top: 70%
+        filter: opacity(0.5)
+    30% 
+        top: 50%
+        filter: opacity(0.8)
+    50% 
+        top: 55%
+    100% 
+        filter: opacity(0)
+.carousel:hover > .carousel-inner > .banner-mark 
+    transition: 2s
+    filter: opacity(0)
+
+
+//***************************992px***************************//
+@media (max-width: 992px)
+    .banner-mark 
+        width: 400px
+        height: 200px
+    
+    
+//***************************768px***************************//
+@media (max-width: 768px)
+    .banner-mark 
+        display: none
+    

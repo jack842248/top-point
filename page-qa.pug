@@ -1,0 +1,229 @@
+doctype html
+head
+    //------------------------------使用的字符編碼------------------------------//
+    meta(charset='UTF-8')
+
+
+    //------------------------------優先使用IE最新版本和Chrome------------------------------//
+    meta(http-equiv='X-UA-compatible',content='ie=edge,chrome=1')
+
+
+    //------------------------------符合各裝置最佳預覽------------------------------//
+    meta(name='viewport',
+        content='width=device-width',
+        height='device-height',
+        initial-scale='1',
+        minimum-scale='1',
+        maximum-scale='1',
+        user-scalable='no')
+
+
+    //------------------------------網頁頁面資訊------------------------------//
+    title 突奌咖啡喵
+    meta(name='description',content='貓主題咖啡店')
+    meta(name='author',content='黃俊傑')
+
+
+    //------------------------------頁面在Facebook、Plurk、LINE資訊------------------------------//
+    meta(property='og:title',content='突奌咖啡喵')
+    meta(property='og:description',content='貓主題咖啡店')
+    meta(property='og:type',content='website')
+    meta(property='og:url',content='https://jack842248.github.io/top-point/')
+    meta(property='og:image',content='images/og-images.png')
+    meta(property='og:site_name',content='jack842248')
+
+
+    //------------------------------頁面在Google+、Pinterest、LinkedIn資訊------------------------------//
+    meta(itemprop='name',content='突奌咖啡喵')
+    meta(itemprop='description',content='貓主題咖啡店')
+    meta(itemprop='image',content='images/og-images.png')
+
+
+    //------------------------------頁面在twitter資訊------------------------------//
+    meta(name='twitter:title',content='突奌咖啡喵')
+    meta(name='twitter:description',content='貓主題咖啡店')
+    meta(name='twitter:card',content='website')
+    meta(name='twitter:image',content='images/og-images.png')
+    meta(name='twitter:site',content='jack842248')
+
+
+    //------------------------------在各瀏覽器上網址的顯示------------------------------//
+    link(rel='canonical',href='https://jack842248.github.io/top-point/')
+    link(rel="icon",href="images/favicon.ico")
+    link(type='text/css',media='only screen and (-webkit-min-device-pixel-ratio: 2)',href='/Images/IPhone.css')
+
+    
+    //------------------------------讓連結都以新開視窗方式打開------------------------------//
+    //- base(target='_blank')
+
+
+    //------------------------------CSS樣式連結------------------------------//
+    link(rel='stylesheet',type="text/css",href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
+    link(rel='stylesheet',type="text/css",href='css/plugin/bootstrap.css')
+    link(rel='stylesheet',type="text/css",href='css/all.css')
+
+body
+    header
+        nav.container-fluid.navbar-position.p-0
+            #navbar.container.navbar.navbar-expand-lg.p-0
+                h1(style='float:left')
+                    a.navbar-brand.navbar-logo(href='index.html') 突奌咖啡貓
+                .navbar-icon(data-target="#menu")
+                    .line1
+                    .line2
+                    .line3
+                #menu.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto.text-center
+                        li.nav-item.active
+                            a.nav-link.text-white.nav-btn.px-4(href='page-about.html')
+                                span.font-sm ABOUT
+                                br
+                                span.font-md 關於本店
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-menu.html')
+                                span.font-sm ONLINE MENU
+                                br
+                                span.font-md 美味菜單
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-qa.html')
+                                span.font-sm Q&A
+                                br
+                                span.font-md 常見問答
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-contact.html')
+                                span.font-sm CONTACT US
+                                br
+                                span.font-md 聯絡我們
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='https://www.facebook.com/%E7%AA%81%E5%A5%8C%E5%92%96%E5%95%A1%E5%96%B5-220841121329242/' target='_blank')
+                                span.font-sm FACEBOOK
+                                br
+                                span.font-md 粉絲專頁
+
+    
+        #banner.carousel.slide(data-ride='carousel')
+            ul.carousel-indicators
+                li.active(data-target='#banner' data-slide-to='0')
+                li(data-target='#banner' data-slide-to='1')
+                li(data-target='#banner' data-slide-to='2')
+                li(data-target='#banner' data-slide-to='3')
+                li(data-target='#banner' data-slide-to='4')
+            .carousel-inner.p-0
+                .banner-mark
+                .carousel-item.active(style="height:600px;background-image:url('images/banner-1.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-2.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-3.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-4.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-5.jpg');background-size:cover;background-position:center center")
+            a.carousel-control-prev(href='#banner' data-slide='prev')
+                span.carousel-control-prev-icon
+            a.carousel-control-next(href='#banner' data-slide='next')
+                span.carousel-control-next-icon
+
+    main
+        section.container-fluid.py-5.px-4(style='background-color: #ffeabf;')
+            h2.qa-title <i class="far fa-question-circle"></i> 突奌喵問答集 <i class="far fa-question-circle"></i>
+            .row.pt-5.justify-content-center
+                .col-md-6.d-flex.flex-column.jusfity-content-center.align-items-center.mb-4
+                    .reel
+                        .circle1
+                        .circle2
+                        .circle3
+                        .circle4
+                        h3.h3.my-4.text-center <i class="fas fa-cat fa-sm"></i> 咖啡喵公約 <i class="fas fa-cat fa-sm" style="transform:scaleX(-1)"></i>
+                        ul.qa-ul
+                            li 粉絲專業無法接受訂位，訂位請撥:03-4282972
+                            li 訂位人數最多10人
+                            li 6歲以下兒童與店貓互動需由家長陪同
+                            li 7、8月暑假期間、週六、例假日用餐時間限時2小時
+                            li 週日為定休日
+                            li 個人低消100元，無法合併計算
+                            li 提供免費WiFi，不提供插座
+                            li 無特約停車場
+                            ul 禁止以下事項 :
+                                li 在餐廳內飲用外食
+                                li 桌遊或紙牌遊戲
+                                li 吸菸
+                                li 追貓、抱貓、餵貓
+                                li 攜帶大型犬、具攻擊性寵物
+                .col-md-6
+                    #accordion.accordion
+                        .card
+                            .card-header.qa-click
+                                a.text-dark.qa-a(href='#collapse-1' data-toggle='collapse') Q1：我們可以摸貓咪、拍照跟他們玩嗎?
+                            #collapse-1.card-body.qa-content.collapse.show(data-parent='#accordion') A1：可以!但因為貓咪個性容易緊張，所以請勿驚擾睡夢中的貓咪。<br>可以輕撫貓咪與他們合照，但請勿使用閃光燈拍照、強行抱起他們或餵食。<br>請避免讓小朋友在店內奔跑喧嘩或是單獨與貓咪相處，以免貓咪攻擊小朋友。
+                        .card
+                            .card-header
+                                 a.text-dark.qa-a(href='#collapse-2' data-toggle='collapse') Q2：可以帶自己的毛小孩進來嗎?
+                            #collapse-2.card-body.qa-content.collapse(data-parent='#accordion') A2：可以喔!以不影響他人為主，而且結紮及施打過預防針的毛孩子會比較好喔!<br>毛孩子到陌生的地方環境都會比較緊張不適應，建議您要帶提籠或牽繩!為維護現場品質，寵物隻數不可超過人數。
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-3' data-toggle='collapse') Q3：請問我們可以帶外食嗎?
+                            #collapse-3.card-body.qa-content.collapse(data-parent='#accordion') A3：店內禁止飲用外食喔!但可以帶蛋糕來慶生喔!
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-4' data-toggle='collapse') Q4：消費方式?
+                            #collapse-4.card-body.qa-content.collapse(data-parent='#accordion') A4：輕食、午餐、晚餐、個人套餐、只收現金。
+                        .card
+                            .card-header
+                                 a.text-dark.qa-a(href='#collapse-5' data-toggle='collapse') Q5：請問你們可以訂位嗎?
+                            #collapse-5.card-body.qa-content.collapse(data-parent='#accordion') A5：目前只接受電話訂位!
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-6' data-toggle='collapse') Q6：請問你們有限制用餐時間?
+                            #collapse-6.card-body.qa-content.collapse(data-parent='#accordion') A6：平日沒有限時，但週六及例假日限時兩小時!
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-7' data-toggle='collapse') Q7：座位最多可以容納多少人呢?
+                            #collapse-7.card-body.qa-content.collapse(data-parent='#accordion') A7：維護現場用餐品質，我們最多接受10位的訂位喔!
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-8' data-toggle='collapse') Q8：星期天有營業嗎?
+                            #collapse-8.card-body.qa-content.collapse(data-parent='#accordion') A8：沒有喔!我們週日固定店休。<br>下午沒有休息全日供餐!不定時店休會於FB粉絲專頁工公告。
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-9' data-toggle='collapse') Q9：為什麼晚上八點之後不能點餐點了?
+                            #collapse-9.card-body.qa-content.collapse(data-parent='#accordion') A9：平日營業時間為:11:30至19:00，最後出餐時間為18:30。<br>周六營業時間為11:30至21:00，最後出餐時間為19:50。<br>以上若餐點提早售完則不再此限。<br>每日的下午茶時段為13:00至17:00。
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-10' data-toggle='collapse') Q10：有汽車停車場嗎?
+                            #collapse-10.card-body.qa-content.collapse(data-parent='#accordion') A10：我們沒有特約停車場!<br>鄰近停車場敬請參考店門口告示牌，建議您就近至合作金庫斜對面的收費停車場，步行約3分鐘!
+                        .card
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-11' data-toggle='collapse') Q11：請問有提供素食的餐點嗎?
+                            #collapse-11.card-body.qa-content.collapse(data-parent='#accordion') A11：有的，但只有素食義大利麵(或燉飯)和瑪格莉特披薩，烹煮時可以不要加。
+                        .card.mb-3
+                            .card-header
+                                a.text-dark.qa-a(href='#collapse-12' data-toggle='collapse') Q12：請問可以玩牌嗎?
+                            #collapse-12.card-body.qa-content.collapse(data-parent='#accordion') A12：抱歉，塔羅牌占卜是OK的，但咖啡喵是禁止桌上遊戲的!
+                        small.text-center 以上說明和消費規則突奌咖啡保有修改權利，觀迎來電詢問唷!
+            .qa-footer
+
+
+    footer.container-fluid.p-3.bg-main
+        .row.align-items-center
+            .col-lg-3.footer-logo(style="max-width:300px;height:100px;background-image:url('images/navbar-logo.svg');background-size:80%;background-position:center center;background-repeat:no-repeat")
+            .col-lg-3.col-md-6
+                a.tel(href='tel:+886-3-4282972' style='white-space:nowrap') 03-428-2972
+                .address.h5.text-white 320桃園市中壢區福州路20號
+            .col-lg-6.col-md-6.ml-auto
+                ul.nav.footer-nav.mt-3
+                    li.nav-item
+                        a.footer-firsta.nav-link(style='border-right: solid 1px white' href='page-about.html') 關於本店
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-menu.html') 美味菜單
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-qa.html') 常見問答
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-contact.html') 聯絡我們
+                    li.nav-item
+                        a.footer-a.nav-link(href='https://www.facebook.com/%E7%AA%81%E5%A5%8C%E5%92%96%E5%95%A1%E5%96%B5-220841121329242/' target='_blank') 粉絲專頁
+                .copyright.text-white.mt-2 @copyright 2020 突奌貓咖啡
+    i#uptop.far.fa-caret-square-up.uptop
+
+
+    //------------------------------JS連結檔------------------------------//
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.bundle.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js')
+    script(src='js/all.js')

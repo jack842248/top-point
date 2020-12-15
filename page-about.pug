@@ -1,0 +1,197 @@
+doctype html
+head
+    //------------------------------使用的字符編碼------------------------------//
+    meta(charset='UTF-8')
+
+
+    //------------------------------優先使用IE最新版本和Chrome------------------------------//
+    meta(http-equiv='X-UA-compatible' content='ie=edge,chrome=1')
+
+
+    //------------------------------符合各裝置最佳預覽------------------------------//
+    meta(name='viewport',
+        content='width=device-width',
+        height='device-height',
+        initial-scale='1',
+        minimum-scale='1',
+        maximum-scale='1',
+        user-scalable='no')
+
+
+    //------------------------------網頁頁面資訊------------------------------//
+    title 突奌咖啡喵
+    meta(name='description' content='貓主題咖啡店')
+    meta(name='author' content='黃俊傑')
+
+
+    //------------------------------頁面在Facebook、Plurk、LINE資訊------------------------------//
+    meta(property='og:title' content='突奌咖啡喵')
+    meta(property='og:description' content='貓主題咖啡店')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='https://jack842248.github.io/top-point/')
+    meta(property='og:image' content='images/og-images.png')
+    meta(property='og:site_name' content='jack842248')
+
+
+    //------------------------------頁面在Google+、Pinterest、LinkedIn資訊------------------------------//
+    meta(itemprop='name' content='突奌咖啡喵')
+    meta(itemprop='description' content='貓主題咖啡店')
+    meta(itemprop='image' content='images/og-images.png')
+
+
+    //------------------------------頁面在twitter資訊------------------------------//
+    meta(name='twitter:title' content='突奌咖啡喵')
+    meta(name='twitter:description' content='貓主題咖啡店')
+    meta(name='twitter:card' content='website')
+    meta(name='twitter:image' content='images/og-images.png')
+    meta(name='twitter:site' content='jack842248')
+
+
+    //------------------------------在各瀏覽器上網址的顯示------------------------------//
+    link(rel='canonical' href='https://jack842248.github.io/top-point/')
+    link(rel="icon" href="images/favicon.ico")
+    link(type='text/css' media='only screen and (-webkit-min-device-pixel-ratio: 2)' href='/Images/IPhone.css')
+
+
+    //------------------------------讓連結都以新開視窗方式打開------------------------------//
+    //- base(target='_blank')
+
+
+    //------------------------------CSS樣式連結------------------------------//
+    link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
+    link(rel='stylesheet' type="text/css" href='css/plugin/bootstrap.css')
+    link(rel='stylesheet' type="text/css" href='css/all.css')
+
+body
+    header
+        nav.container-fluid.navbar-position.p-0
+            #navbar.container.navbar.navbar-expand-lg.p-0
+                h1(style='float:left')
+                    a.navbar-brand.navbar-logo(href='index.html') 突奌咖啡貓
+                .navbar-icon(data-target="#menu")
+                    .line1
+                    .line2
+                    .line3
+                #menu.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto.text-center
+                        li.nav-item.active
+                            a.nav-link.text-white.nav-btn.px-4(href='page-about.html')
+                                span.font-sm ABOUT
+                                br
+                                span.font-md 關於本店
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-menu.html')
+                                span.font-sm ONLINE MENU
+                                br
+                                span.font-md 美味菜單
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-qa.html')
+                                span.font-sm Q&A
+                                br
+                                span.font-md 常見問答
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='page-contact.html')
+                                span.font-sm CONTACT US
+                                br
+                                span.font-md 聯絡我們
+                        li.nav-item
+                            a.nav-link.text-white.nav-btn.px-4(href='https://www.facebook.com/%E7%AA%81%E5%A5%8C%E5%92%96%E5%95%A1%E5%96%B5-220841121329242/' target='_blank')
+                                span.font-sm FACEBOOK
+                                br
+                                span.font-md 粉絲專頁
+
+
+        #banner.carousel.slide(data-ride='carousel')
+            ul.carousel-indicators
+                li.active(data-target='#banner' data-slide-to='0')
+                li(data-target='#banner' data-slide-to='1')
+                li(data-target='#banner' data-slide-to='2')
+                li(data-target='#banner' data-slide-to='3')
+                li(data-target='#banner' data-slide-to='4')
+            .carousel-inner.p-0
+                .banner-mark
+                .carousel-item.active(style="height:600px;background-image:url('images/banner-1.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-2.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-3.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-4.jpg');background-size:cover;background-position:center center")
+                .carousel-item(style="height:600px;background-image:url('images/banner-5.jpg');background-size:cover;background-position:center center")
+            a.carousel-control-prev(href='#banner' data-slide='prev')
+                span.carousel-control-prev-icon
+            a.carousel-control-next(href='#banner' data-slide='next')
+                span.carousel-control-next-icon
+
+
+
+
+
+    main
+        section.container-fluid.py-5.px-4(style='background-color: #ffeabf;')
+            h2.about-title <i class="fas fa-paw"></i> 關於突奌喵 <i class="fas fa-paw"></i>
+            .row.pt-5
+                .col-md-5.d-flex.flex-column.order-md-2.mb-5
+                    ul.about-ul
+                        li
+                            i.fas.fa-home
+                        li.about-p(style='line-height: 1.8') 我們是一間以貓為主題的咖啡店<br>隱藏在喧囂城市中寧靜的像弄間<br>香韻濃醇的咖啡味道飄散在空氣中<br>突奌喵咪們沉靜在這香氣之中
+                    ul.about-ul
+                        li
+                            i.fas.fa-cookie-bite
+                        li.about-p 我們店內販售現煮咖啡、手做甜品、義式料理、披薩、輕食、沙拉、炸物、鬆餅等
+                    ul.about-ul
+                        li
+                            i.fas.fa-calendar-day
+                        li.about-p 營業時間為週一到週六，每天上午11:30到下午21:00<br>每個禮拜天為公休日
+                    ul.about-ul
+                        li
+                            i.fas.fa-mug-hot
+                        li.about-p 歡迎各位光臨，前來享用美味餐點，享受這個充滿香氣又慵懶的美好時光。
+                .col-md-7.order-md-1
+                    img.about-pic(src='../images/about-bg.jpg')
+            .about-footer
+
+        
+        .container-fluid.p-0
+            .form-row.m-0
+                .col-md-9.p-0
+                    .form-row.m-0
+                        .col-sm-4.p-0.cat-photo-1(style="background-image:url('../images/cat-photo-1.png')")
+                        .col-sm-8.p-0.cat-photo-2(style="background-image:url('../images/cat-photo-2.png')")
+                    .form-row.m-0
+                        .col-sm-8.p-0.cat-photo-3(style="background-image:url('../images/cat-photo-3.png')")
+                        .col-sm-4.p-0
+                            .form-row.m-0
+                                .col-12.p-0.cat-photo-4(style="background-image:url('../images/cat-photo-4.png')")
+                            .form-row.m-0
+                                .col-12.p-0.cat-photo-5(style="background-image:url('../images/cat-photo-5.png')")
+                .col-md-3.p-0
+                    .form-row.m-0
+                        .col-12.p-0.cat-photo-6(style="background-image:url('../images/cat-photo-6.png')")
+                    .form-row.m-0
+                        .col-12.p-0.cat-photo-7(style="background-image:url('../images/cat-photo-7.png')")
+    footer.container-fluid.p-3.bg-main
+        .row.align-items-center
+            .col-lg-3.footer-logo(style="max-width:300px;height:100px;background-image:url('images/navbar-logo.svg');background-size:80%;background-position:center center;background-repeat:no-repeat")
+            .col-lg-3.col-md-6
+                a.tel(href='tel:+886-3-4282972' style='white-space:nowrap') 03-428-2972
+                .address.h5.text-white 320桃園市中壢區福州路20號
+            .col-lg-6.col-md-6.ml-auto
+                ul.nav.footer-nav.mt-3
+                    li.nav-item
+                        a.footer-firsta.nav-link(style='border-right: solid 1px white' href='page-about.html') 關於本店
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-menu.html') 美味菜單
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-qa.html') 常見問答
+                    li.nav-item
+                        a.footer-a.nav-link(style='border-right: solid 1px white' href='page-contact.html') 聯絡我們
+                    li.nav-item
+                        a.footer-a.nav-link(href='https://www.facebook.com/%E7%AA%81%E5%A5%8C%E5%92%96%E5%95%A1%E5%96%B5-220841121329242/' target='_blank') 粉絲專頁
+                .copyright.text-white.mt-2 @copyright 2020 突奌貓咖啡
+    i#uptop.far.fa-caret-square-up.uptop
+
+
+    //------------------------------JS連結檔------------------------------//
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.bundle.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js')
+    script(src='js/all.js')
