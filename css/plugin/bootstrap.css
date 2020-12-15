@@ -6584,7 +6584,7 @@ a.close.disabled {
   margin-left: 6px;
   text-indent: -999px;
   cursor: pointer;
-  background-image: url("/images/head-white.svg");
+  background-image: url("https://raw.githubusercontent.com/jack842248/top-point/34a87cdfb19d6940f92cde8b77410684d04909d9/images/head-white.svg");
   background-size: cover;
   background-clip: padding-box;
   border-top: 10px solid transparent;
@@ -6602,7 +6602,7 @@ a.close.disabled {
 
 .carousel-indicators .active {
   opacity: 1;
-  background-image: url("/images/head-hover.svg");
+  background-image: url("https://github.com/jack842248/top-point/blob/main/images/head-hover.png?raw=true");
 }
 
 .carousel-caption {
