@@ -58,9 +58,9 @@ head
 
 
     //------------------------------CSS樣式連結------------------------------//
-    link(rel='stylesheet',type="text/css",href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
-    link(rel='stylesheet',type="text/css",href='css/plugin/bootstrap.css')
-    link(rel='stylesheet',type="text/css",href='css/all.css')
+    link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
+    link(rel='stylesheet' type="text/css" href='css/bootstrap.css')
+    link(rel='stylesheet' type="text/css" href='css/all.css')
 
 body
     header
@@ -148,54 +148,10 @@ body
                                 li 攜帶大型犬、具攻擊性寵物
                 .col-md-6
                     #accordion.accordion
-                        .card
+                        .card(v-for="(id,qa) in qas")
                             .card-header.qa-click
-                                a.text-dark.qa-a(href='#collapse-1' data-toggle='collapse') Q1：我們可以摸貓咪、拍照跟他們玩嗎?
-                            #collapse-1.card-body.qa-content.collapse.show(data-parent='#accordion') A1：可以!但因為貓咪個性容易緊張，所以請勿驚擾睡夢中的貓咪。<br>可以輕撫貓咪與他們合照，但請勿使用閃光燈拍照、強行抱起他們或餵食。<br>請避免讓小朋友在店內奔跑喧嘩或是單獨與貓咪相處，以免貓咪攻擊小朋友。
-                        .card
-                            .card-header
-                                 a.text-dark.qa-a(href='#collapse-2' data-toggle='collapse') Q2：可以帶自己的毛小孩進來嗎?
-                            #collapse-2.card-body.qa-content.collapse(data-parent='#accordion') A2：可以喔!以不影響他人為主，而且結紮及施打過預防針的毛孩子會比較好喔!<br>毛孩子到陌生的地方環境都會比較緊張不適應，建議您要帶提籠或牽繩!為維護現場品質，寵物隻數不可超過人數。
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-3' data-toggle='collapse') Q3：請問我們可以帶外食嗎?
-                            #collapse-3.card-body.qa-content.collapse(data-parent='#accordion') A3：店內禁止飲用外食喔!但可以帶蛋糕來慶生喔!
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-4' data-toggle='collapse') Q4：消費方式?
-                            #collapse-4.card-body.qa-content.collapse(data-parent='#accordion') A4：輕食、午餐、晚餐、個人套餐、只收現金。
-                        .card
-                            .card-header
-                                 a.text-dark.qa-a(href='#collapse-5' data-toggle='collapse') Q5：請問你們可以訂位嗎?
-                            #collapse-5.card-body.qa-content.collapse(data-parent='#accordion') A5：目前只接受電話訂位!
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-6' data-toggle='collapse') Q6：請問你們有限制用餐時間?
-                            #collapse-6.card-body.qa-content.collapse(data-parent='#accordion') A6：平日沒有限時，但週六及例假日限時兩小時!
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-7' data-toggle='collapse') Q7：座位最多可以容納多少人呢?
-                            #collapse-7.card-body.qa-content.collapse(data-parent='#accordion') A7：維護現場用餐品質，我們最多接受10位的訂位喔!
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-8' data-toggle='collapse') Q8：星期天有營業嗎?
-                            #collapse-8.card-body.qa-content.collapse(data-parent='#accordion') A8：沒有喔!我們週日固定店休。<br>下午沒有休息全日供餐!不定時店休會於FB粉絲專頁工公告。
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-9' data-toggle='collapse') Q9：為什麼晚上八點之後不能點餐點了?
-                            #collapse-9.card-body.qa-content.collapse(data-parent='#accordion') A9：平日營業時間為:11:30至19:00，最後出餐時間為18:30。<br>周六營業時間為11:30至21:00，最後出餐時間為19:50。<br>以上若餐點提早售完則不再此限。<br>每日的下午茶時段為13:00至17:00。
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-10' data-toggle='collapse') Q10：有汽車停車場嗎?
-                            #collapse-10.card-body.qa-content.collapse(data-parent='#accordion') A10：我們沒有特約停車場!<br>鄰近停車場敬請參考店門口告示牌，建議您就近至合作金庫斜對面的收費停車場，步行約3分鐘!
-                        .card
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-11' data-toggle='collapse') Q11：請問有提供素食的餐點嗎?
-                            #collapse-11.card-body.qa-content.collapse(data-parent='#accordion') A11：有的，但只有素食義大利麵(或燉飯)和瑪格莉特披薩，烹煮時可以不要加。
-                        .card.mb-3
-                            .card-header
-                                a.text-dark.qa-a(href='#collapse-12' data-toggle='collapse') Q12：請問可以玩牌嗎?
-                            #collapse-12.card-body.qa-content.collapse(data-parent='#accordion') A12：抱歉，塔羅牌占卜是OK的，但咖啡喵是禁止桌上遊戲的!
+                                a.text-dark.qa-a(href='#collapse-1' data-toggle='collapse') Q{{id+1}}:{{qa.question}}
+                            #collapse-1.card-body.qa-content.collapse.show(data-parent='#accordion') Q{{id+1}}:{{qa.answer}}
                         small.text-center 以上說明和消費規則突奌咖啡保有修改權利，觀迎來電詢問唷!
             .qa-footer
 
@@ -224,6 +180,7 @@ body
 
     //------------------------------JS連結檔------------------------------//
     script(src='js/jquery.js')
-    script(src='js/bootstrap.bundle.js')
+    script(src='js/bootstrap.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js')
     script(src='js/all.js')
