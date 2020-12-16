@@ -6584,7 +6584,7 @@ a.close.disabled {
   margin-left: 6px;
   text-indent: -999px;
   cursor: pointer;
-  background-image: url("/images/head-white.svg");
+  background-image: url("https://i.imgur.com/rXZTNae.png");
   background-size: cover;
   background-clip: padding-box;
   border-top: 10px solid transparent;
@@ -6602,7 +6602,7 @@ a.close.disabled {
 
 .carousel-indicators .active {
   opacity: 1;
-  background-image: url("/images/head-hover.svg");
+  background-image: url("https://i.imgur.com/XQtkOIe.png");
 }
 
 .carousel-caption {
