@@ -108,16 +108,26 @@
             </div>
             <div class="row pt-3">
                 <div class="col-sm-6 order-sm-2">
-                    <form action="...">
-                        <div class="form-group"><label class="form-label" for="name">姓名
-                                <small>Name</small></label><input class="form-control mb-3" id="name" type="text"
-                                placeholder="請輸入您的大名" required><label class="form-label" for="tel">聯絡電話
-                                <small>Phone</small></label><input class="form-control mb-3" id="tel" type="tel"
-                                placeholder="請輸入您的電話" required><label class="form-label" for="email">電子信箱
-                                <small>Email</small></label><input class="form-control mb-3" id="email" type="email"
-                                placeholder="name@example.com" required><label class="form-label" for="content">意見回饋
-                                <small>Opinion</small></label><textarea class="form-control mb-3" id="content" rows="4"
-                                required></textarea><button class="submit-btn" type="submit">送出信件</button></div>
+                    <form action="https://formspree.io/f/xoqzrryv" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">姓名
+                                <small>Name</small>
+                            </label>
+                            <input class="form-control mb-3" id="name" type="text" placeholder="請輸入您的大名" required>
+                            <label class="form-label" for="tel">聯絡電話
+                                <small>Phone</small>
+                            </label>
+                            <input class="form-control mb-3" id="tel" type="tel" placeholder="請輸入您的電話" required>
+                            <label type="email" name="email" class="form-label" for="email">電子信箱
+                                <small>Email</small>
+                            </label>
+                            <input class="form-control mb-3" id="email" type="email" placeholder="name@example.com" required>
+                            <label class="form-label" for="content">意見回饋
+                                <small>Opinion</small>
+                            </label>
+                            <textarea name="message" class="form-control mb-3" id="content" rows="4" required></textarea>
+                            <button class="submit-btn" type="submit">送出信件</button>
+                        </div>
                     </form>
                 </div>
                 <div class="col-sm-6 d-flex flex-column justify-content-between order-sm-1"><iframe
