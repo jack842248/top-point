@@ -124,9 +124,9 @@
                 <div class="col-md-6">
                     <div class="accordion" id="accordion">
                         <div class="card" v-for="(id,qa) in qas">
-                            <div class="card-header qa-click"><a class="text-dark qa-a" href="#collapse-1"
+                            <div class="card-header qa-click"><a class="text-dark qa-a" href="#collapse-{{id+1}}"
                                     data-toggle="collapse">Q{{id+1}}:{{qa.question}}</a></div>
-                            <div class="card-body qa-content collapse" id="collapse-1" data-parent="#accordion">
+                            <div class="card-body qa-content collapse" id="collapse-{{id+1}}" data-parent="#accordion">
                                 Q{{id+1}}:{{qa.answer}}</div>
                         </div><small class="text-center">以上說明和消費規則突奌咖啡保有修改權利，觀迎來電詢問唷!</small>
                     </div>
